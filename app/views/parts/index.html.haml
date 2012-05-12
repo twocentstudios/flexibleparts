@@ -1,11 +1,13 @@
 %h1 All Parts
-%table
+%table.table.table-striped
 	%thead
-		%th Part
-		%th Description
-		%th # Attributes
+		%tr
+			%th Part
+			%th Description
+			%th # Attributes
 	%tbody
-		- @parts.each do |part|
-			%tr= link_to part.number, part_path(part)
-			%tr= part.description
-			%tr= part.part_traits.count
+	- @parts.each do |part|
+		%tr
+			%td= link_to part.number, part_path(part)
+			%td= part.description
+			%td= part.part_traits.count
