@@ -1,6 +1,6 @@
 class TraitGroupsTraits < ActiveRecord::Base
-  belongs_to => :trait
-  belongs_to => :trait_group
+  belongs_to :trait
+  belongs_to :trait_group
 
   no_structure
 

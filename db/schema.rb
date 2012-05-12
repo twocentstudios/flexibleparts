@@ -11,6 +11,53 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20120512213142) do
+
+  create_table "part_traits", :force => true do |t|
+    t.integer  "part_id"
+    t.integer  "trait_id"
+    t.string   "string_value"
+    t.datetime "updated_at"
+    t.datetime "created_at"
+  end
+
+  add_index "part_traits", ["part_id"], :name => "index_part_traits_on_part_id"
+  add_index "part_traits", ["trait_id"], :name => "index_part_traits_on_trait_id"
+
+  create_table "parts", :force => true do |t|
+    t.string   "number"
+    t.string   "description"
+    t.datetime "updated_at"
+    t.datetime "created_at"
+  end
+
+  create_table "trait_groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "updated_at"
+    t.datetime "created_at"
+  end
+
+  create_table "trait_groups_parts", :force => true do |t|
+    t.integer "part_id"
+    t.integer "trait_group_id"
+  end
+
+  add_index "trait_groups_parts", ["part_id"], :name => "index_trait_groups_parts_on_part_id"
+  add_index "trait_groups_parts", ["trait_group_id"], :name => "index_trait_groups_parts_on_trait_group_id"
+
+  create_table "trait_groups_traits", :force => true do |t|
+    t.integer "trait_id"
+    t.integer "trait_group_id"
+  end
+
+  add_index "trait_groups_traits", ["trait_group_id"], :name => "index_trait_groups_traits_on_trait_group_id"
+  add_index "trait_groups_traits", ["trait_id"], :name => "index_trait_groups_traits_on_trait_id"
+
+  create_table "traits", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "updated_at"
+    t.datetime "created_at"
+  end
 
 end
