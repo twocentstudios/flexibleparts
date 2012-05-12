@@ -1,0 +1,344 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"paddi",
+				"padding	padding-top: length"
+			],
+			[
+				"marg",
+				"margin	margin: V H"
+			],
+			[
+				"padd",
+				"padding	padding: T R B L"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "flexibleparts planning.mdown",
+			"settings":
+			{
+				"buffer_size": 997,
+				"line_ending": "Unix",
+				"name": "* Part"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"selected_items":
+		[
+			[
+				"mark",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"packageds",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"markdow",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 447.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ctrott/Dropbox/web/flexibleparts/Gemfile",
+		"/Users/ctrott/Dropbox/web/flexibleparts/README",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/Markdown Preview/MarkdownPreview.py",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_scope.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_regular_expressions.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_this.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_functions_and_closure.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_prototypal_inheritance.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_reflection.js",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_equality.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_truthyness.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_assignment.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_control_structures.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_strings.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_numbers.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_objects.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_arrays.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_operators.js",
+		"/Users/ctrott/Dropbox/web/JavaScript-Koans/topics/about_asserts.js",
+		"/Users/ctrott/Dropbox/web/resume/index.html",
+		"/Users/ctrott/Downloads/HelpSearch.html",
+		"/Users/ctrott/Dropbox/web/resume/bootstrap/less/bootstrap.css",
+		"/Users/ctrott/Dropbox/web/resume/bootstrap/docs/examples/starter-template.html",
+		"/Users/ctrott/Dropbox/web/resume/resume.css",
+		"/Users/ctrott/Dropbox/web/resume/resume.html",
+		"/Users/ctrott/Dropbox/web/resume/bootstrap/less/variables.less",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/ctrott/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/ctrott/Dropbox/web/resume/.gitignore",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-17.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-16.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-15.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-14.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/resources.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/EGOTableViewPullRefresh/Demo/TableViewPull/Classes/Controller/RootViewController/RootViewController.m",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-10.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-08.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-06.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-12.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-13.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-07.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-05.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-04.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-03.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-02-02.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-31.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-30.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-28.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/.gitignore",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-26.txt",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-22",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-23",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-24",
+		"/Users/ctrott/Dropbox/Code/bus2/entires/2012-01-21"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"s",
+			"			<"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "flexibleparts planning.mdown",
+					"settings":
+					{
+						"buffer_size": 997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								544,
+								544
+							]
+						],
+						"settings":
+						{
+							"auto_name": "* Part",
+							"rulers":
+							[
+								70
+							],
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"regu",
+				"about_regular_expressions.js"
+			],
+			[
+				"aboutscop",
+				"about_scope.js"
+			],
+			[
+				"aboutthis",
+				"about_this.js"
+			],
+			[
+				"function",
+				"about_functions_and_closure.js"
+			],
+			[
+				"proto",
+				"about_prototypal_inheritance.js"
+			],
+			[
+				"aboutrefle",
+				"about_reflection.js"
+			],
+			[
+				"aboutre",
+				"about_regular_expressions.js"
+			],
+			[
+				"refle",
+				"about_reflection.js"
+			],
+			[
+				"array",
+				"about_arrays.js"
+			],
+			[
+				"aboutob",
+				"about_objects.js"
+			],
+			[
+				"numb",
+				"about_numbers.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 151.0,
+	"status_bar_visible": true
+}

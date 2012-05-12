@@ -1,0 +1,59 @@
+## Models
+* Part
+	* id
+	* number
+	* description
+	* timestamps
+	* has_many => :attribute_groups, through => :trait_groups_parts
+	* has_many => :part_traits
+	* has_many => :traits, through => :part_traits
+* Trait
+	* id
+	* name
+	* description
+	* timestamps
+	* has_many => :trait_groups, through => :trait_groups_traits
+	* has_many => :parts, through => :part_traits
+* PartTrait
+	* id
+	* part_id
+	* trait_id
+	* string_value
+	* timestamps
+	* belongs_to => :part
+	* belongs_to => :trait
+* TraitGroup
+	* id
+	* name
+	* timestamps
+	* has_many => :traits, through => :trait_groups_parts
+	* has_many => :parts, through => :
+* TraitGroupsParts
+	* belongs_to => :part
+	* belongs_to => :trait_group
+* TraitGroupTraits
+	* belongs_to => :trait
+	* belongs_to => :trait_group
+
+## Tables
+* parts
+* traits
+* part_traits
+* trait_groups
+* trait_groups_parts
+* trait_groups_traits
+
+## Controllers
+* PartsController
+	* index
+	* show
+	* edit
+	* update
+* PartTraitsController
+	* create
+	* create_from_group
+	* destroy
+* TraitsController
+	* index
+* TraitGroupsController
+	* index
