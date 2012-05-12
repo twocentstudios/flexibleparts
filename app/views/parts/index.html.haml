@@ -1,0 +1,11 @@
+%h1 All Parts
+%table
+	%thead
+		%th Part
+		%th Description
+		%th # Attributes
+	%tbody
+		- @parts.each do |part|
+			%tr= link_to part.number, part_path(part)
+			%tr= part.description
+			%tr= part.part_traits.count

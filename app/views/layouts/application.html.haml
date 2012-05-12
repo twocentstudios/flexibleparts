@@ -12,20 +12,20 @@
     = csrf_meta_tags
     = yield(:head)
   %body
-  	.container
-  		.hero-unit
-  			%h1 Flexible Parts
-			%header
-				%nav
-					.row
-						.span12
-							= render 'layouts/navigation'
-			%section
-				.row
-					.span12
-						= render 'layouts/messages'
-						= yield
-			%footer
-				.row
-					.span12
-						= render 'layouts/footer'
+    .container
+      .hero-unit
+        %h1 Flexible Parts
+      %header
+        %nav
+          .row
+            .span12
+              = render 'layouts/navigation'
+      %section
+        .row
+          .span12
+            = render 'layouts/messages'
+            = yield
+      %footer
+        .row
+          .span12
+            = render 'layouts/footer'
