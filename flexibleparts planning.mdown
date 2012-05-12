@@ -57,3 +57,9 @@
 	* index
 * TraitGroupsController
 	* index
+
+## Routes
+* Part
+	* /parts
+	*	/part/1
+	* /part/1/edit
