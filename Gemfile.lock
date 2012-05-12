@@ -73,6 +73,12 @@ GEM
     faker (1.0.1)
       i18n (~> 0.4)
     fssm (0.2.9)
+    haml (3.1.5)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.3)
@@ -166,6 +172,7 @@ DEPENDENCIES
   compass_twitter_bootstrap!
   country_select
   factory_girl_rails
+  haml-rails
   jquery-rails
   migrant
   nested_form!
