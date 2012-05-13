@@ -8,7 +8,8 @@
 				%button.close{"data-dismiss" => "modal"} x
 				%h3 Add Trait Group
 			.modal-body
-				= f.association :trait_groups, :input_html => {:class => "chzn-select"}
+				-# = f.association :trait_groups, :input_html => {:class => "chzn-select"}
+				= best_in_place @part, :trait_groups, :type => :select, :collection => @all_trait_groups, :inner_class => "chzn-select"
 			.modal-footer
 				= link_to "Close", "#", :class => "btn", "data-dismiss" => "modal"
 		%span#filter.btn-group{"data-toggle" => "button-radio"}
