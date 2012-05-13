@@ -2,7 +2,7 @@
 	= @part.number
 	%small= link_to "edit", edit_part_path(@part)
 #trait-groups
-	#filter.btn-group{"data-toggle" => "button-radio"}
+	#filter.btn-group{"data-toggle" => "buttons-checkbox"}
 		- @part.trait_groups.each do |trait_group|
 			%button.btn= trait_group.name
 .row
