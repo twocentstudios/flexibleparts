@@ -4,10 +4,12 @@
 		%tr
 			%th Part
 			%th Description
-			%th # Attributes
+			%th # Traits
+			%th Trait Groups
 	%tbody
 	- @parts.each do |part|
 		%tr
 			%td= link_to part.number, part_path(part)
 			%td= part.description
 			%td= part.part_traits.count
+			%td= part.trait_groups.map { |group| group.name }.join(", ")
