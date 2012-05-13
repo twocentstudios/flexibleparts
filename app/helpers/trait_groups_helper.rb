@@ -1,0 +1,2 @@
+module TraitGroupsHelper
+end
