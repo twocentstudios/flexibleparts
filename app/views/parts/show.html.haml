@@ -1,13 +1,18 @@
-%h1= @part.number
-%h4
-	%small= @part.trait_groups.map { |group| group.name }.join(", ")
-%table.table.table-striped
-	%thead
-		%tr
-			%th Trait
-			%th Value
-	%tbody
-	- @part.part_traits.each do |part_trait|
-		%tr
-			%td= part_trait.trait.name
-			%td= part_trait.string_value
+%h1
+	= @part.number
+	%small= link_to "edit", edit_part_path(@part)
+#filter.btn-group{"data-toggle" => "button-radio"}
+	- @part.trait_groups.each do |trait_group|
+		%button.btn= trait_group.name
+.row
+	.span4
+		%table.table.table-striped.table-condensed.table-bordered
+			%thead
+				%tr
+					%th Trait
+					%th Value
+			%tbody
+			- @part.part_traits.each do |part_trait|
+				%tr
+					%td= part_trait.trait.name
+					%td= part_trait.string_value
