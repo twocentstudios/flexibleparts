@@ -3,6 +3,7 @@ Flexibleparts::Application.routes.draw do
   # first created -> highest priority.
 
   resources :parts
+  resources :trait_groups
 
   root to: 'parts#index'
 

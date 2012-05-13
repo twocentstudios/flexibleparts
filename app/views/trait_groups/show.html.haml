@@ -1,0 +1,23 @@
+%h1= "\"#{@trait_group.name}\""
+%h2 Traits
+%table.table.table-striped
+	%thead
+		%tr
+			%th Trait Name
+			%th Trait Description
+	%tbody
+	- @trait_group.traits.each do |trait|
+		%tr
+			%td= trait.name
+			%td= trait.description
+%h2 Associated Parts
+%table.table.table-striped
+	%thead
+		%tr
+			%th Part Number
+			%th Part Description
+	%tbody
+	- @trait_group.parts.each do |part|
+		%tr
+			%td= link_to part.number, part_path(part)
+			%td= part.description

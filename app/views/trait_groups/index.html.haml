@@ -1,0 +1,15 @@
+%h1 Trait Groups
+.row
+	.span6
+		%table.table.table-striped
+			%thead
+				%tr
+					%th Name
+					%th # Traits
+					%th # Parts
+			%tbody
+			- @trait_groups.each do |trait_group|
+				%tr
+					%td= link_to trait_group.name, trait_group_path(trait_group)
+					%td= trait_group.traits.count
+					%td= trait_group.parts.count
