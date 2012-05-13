@@ -1,0 +1,33 @@
+%h1
+	= @part.number
+	%small editing
+= simple_form_for @part do |f|
+	#trait-groups
+		#newTraitGroupModal.modal.hide.fade
+			.modal-header
+				%button.close{"data-dismiss" => "modal"} x
+				%h3 Add Trait Group
+			.modal-body
+				= f.association :trait_groups, :input_html => {:class => "chzn-select"}
+			.modal-footer
+				= link_to "Close", "#", :class => "btn", "data-dismiss" => "modal"
+		%span#filter.btn-group{"data-toggle" => "button-radio"}
+			- @part.trait_groups.each do |trait_group|
+				%button.btn= trait_group.name
+		%span= link_to "Add Trait Group", "#newTraitGroupModal", :class => "btn btn-success", :id => "new-trait-group-btn", "data-toggle" => "modal"
+	.row
+		.span6
+			%table.table.table-striped.table-condensed.table-bordered
+				%thead
+					%tr
+						%th Trait
+						%th Value
+						%th Remove
+				%tbody
+					= f.simple_fields_for :part_traits do |part_traits_form|
+						%tr
+							%td= part_traits_form.object.trait.name
+							%td= part_traits_form.input :string_value, :label => false
+							%td= part_traits_form.input :_destroy, :as => :boolean, :label => false
+	= f.button :submit, :class => 'btn btn-primary'
+	%span= link_to "Cancel", part_path(@part), :class => "btn"
