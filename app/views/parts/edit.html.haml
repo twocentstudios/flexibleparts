@@ -1,24 +1,13 @@
 %h1
 	= @part.number
 	%small editing
-= simple_form_for @part do |f|
-	#trait-groups
-		#newTraitGroupModal.modal.hide.fade
-			.modal-header
-				%button.close{"data-dismiss" => "modal"} x
-				%h3 Add Trait Group
-			.modal-body
-				-# = f.association :trait_groups, :input_html => {:class => "chzn-select"}
-				= best_in_place @part, :trait_groups, :type => :select, :collection => @all_trait_groups, :inner_class => "chzn-select"
-			.modal-footer
-				= link_to "Close", "#", :class => "btn", "data-dismiss" => "modal"
-		%span#filter.btn-group{"data-toggle" => "button-radio"}
-			- @part.trait_groups.each do |trait_group|
-				%button.btn= trait_group.name
-		%span= link_to "Add Trait Group", "#newTraitGroupModal", :class => "btn btn-success", :id => "new-trait-group-btn", "data-toggle" => "modal"
+= simple_form_for @part, :html => {:class => "form-inline"} do |f|
 	.row
 		.span6
-			%table.table.table-striped.table-condensed.table-bordered
+			#trait-groups
+				.well.form-inline
+					= f.association :trait_groups, :input_html => {:class => "chzn-select span5"}, :label_html => {:id => "trait-group-label"}
+			%table.table.table-striped.table-condensed
 				%thead
 					%tr
 						%th Trait

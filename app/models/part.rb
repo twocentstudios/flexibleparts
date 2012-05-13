@@ -11,6 +11,7 @@ class Part < ActiveRecord::Base
   end
 
 	accepts_nested_attributes_for :part_traits, :allow_destroy => :true
+	accepts_nested_attributes_for :trait_groups, :allow_destroy => :true
 
   def add_trait_group!(trait_group)
   	trait_groups.create!(trait_group_id: trait_group.id)
