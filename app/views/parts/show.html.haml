@@ -1,0 +1,13 @@
+%h1= @part.number
+%h4
+	%small= @part.trait_groups.map { |group| group.name }.join(", ")
+%table.table.table-striped
+	%thead
+		%tr
+			%th Trait
+			%th Value
+	%tbody
+	- @part.part_traits.each do |part_trait|
+		%tr
+			%td= part_trait.trait.name
+			%td= part_trait.string_value
