@@ -1,4 +1,4 @@
-class TraitGroupsTraits < ActiveRecord::Base
+class TraitGroupTrait < ActiveRecord::Base
   belongs_to :trait
   belongs_to :trait_group
 
