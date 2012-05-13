@@ -14,7 +14,8 @@ class PartsController < ApplicationController
 	def update
 		@part = Part.find(params[:id])
 		if @part.update_attributes(params[:part])
-			redirect_to @part, :success => "Part was successfully updated"
+			flash[:success] = "Part was successfully updated"
+			redirect_to @part
 		else
 			render 'edit'
 		end
