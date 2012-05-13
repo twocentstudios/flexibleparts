@@ -9,9 +9,10 @@ class TraitGroupPart < ActiveRecord::Base
 
   after_create do |trait_group_part|
   	# on adding a new trait group to a part, add all the trait group's traits to the part's traits
+    p = trait_group_part.part
 
   	trait_group_part.trait_group.traits.each do |trait|
-  		trait_group_part.part.traits << trait
+      p.part_traits.find_or_create_by_trait_id(trait.id)
   	end
   end
 end
