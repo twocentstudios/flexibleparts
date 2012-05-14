@@ -10,7 +10,7 @@ class Part < ActiveRecord::Base
   	timestamps
   end
 
-	accepts_nested_attributes_for :part_traits, :allow_destroy => :true
+	accepts_nested_attributes_for :part_traits, :allow_destroy => :true, :reject_if => lambda { |c| c[:trait_id].blank? }
 	accepts_nested_attributes_for :trait_groups, :allow_destroy => :true
 
   def add_trait_group!(trait_group)
