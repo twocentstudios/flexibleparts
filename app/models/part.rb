@@ -10,7 +10,8 @@ class Part < ActiveRecord::Base
   	timestamps
   end
 
-	accepts_nested_attributes_for :part_traits, :allow_destroy => :true, :reject_if => lambda { |c| c[:trait_id].blank? }
+  # not sure what to reject_if here. new entries have a :trait_id, existing have :id. I'm checking to see if both fields are blank.
+	accepts_nested_attributes_for :part_traits, :allow_destroy => :true, :reject_if => lambda { |c| c[:id].blank? and c[:trait_id].blank? }
 	accepts_nested_attributes_for :trait_groups, :allow_destroy => :true
 
   def add_trait_group!(trait_group)
