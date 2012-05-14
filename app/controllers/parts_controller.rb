@@ -9,6 +9,7 @@ class PartsController < ApplicationController
 
 	def edit
 		@part = Part.find(params[:id])
+		@part.part_traits.build
 	end
 
 	def update
@@ -17,6 +18,7 @@ class PartsController < ApplicationController
 			flash[:success] = "Part was successfully updated"
 			redirect_to @part
 		else
+			flash[:error] = "There was an error updating the part"
 			render 'edit'
 		end
 	end
