@@ -16,7 +16,7 @@
 				%tbody
 					= f.simple_fields_for :part_traits do |part_traits_form|
 						%tr
-							%td= part_traits_form.object.trait.name
+							%td= part_traits_form.object.new_record? ? (part_traits_form.association :trait, :label => false, :input_html => {:class => "chzn-select-deselect"}, :collection => (Trait.all - @part.traits)) : part_traits_form.object.trait.name
 							%td= part_traits_form.input :string_value, :label => false
 							%td= part_traits_form.input :_destroy, :as => :boolean, :label => false
 	= f.button :submit, :class => 'btn btn-primary'
