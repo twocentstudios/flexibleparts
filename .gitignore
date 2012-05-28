@@ -15,3 +15,7 @@
 /tmp
 ERD.pdf
 .DS_Store
+
+# Ignore screenshots
+
+/doc/screenshots
