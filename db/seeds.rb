@@ -75,6 +75,21 @@ trait_marketing.traits << trait
 trait = Trait.create!(:name => 'marketing bullet 5', :description => "marketing copy about the product")
 trait_marketing.traits << trait
 
+trait_stripper = TraitGroup.create!(:name => 'stripper')
+
+trait = Trait.create!(:name => 'strippable wire gauge', :description => "The gauge range in AWG that the tool can strip")
+trait_stripper.traits << trait
+
+trait_cutter = TraitGroup.create!(:name => 'wire cutter')
+
+trait = Trait.create!(:name => 'cuttable wire gauge', :description => "The gauge range in AWG that the tool can cut")
+trait_cutter.traits << trait
+
+trait_shearer = TraitGroup.create!(:name => 'bolt shearer')
+
+trait = Trait.create!(:name => 'shearable bolt sizes', :description => "The bolt sizes the tool is designed to shear")
+trait_shearer.traits << trait
+
 # -----------
 
 part = Part.create!(:number => 'D213-9NE', :description => "9\" High-Leverage Side-Cutting Pliers")
@@ -97,9 +112,12 @@ part.trait_groups << [trait_all, trait_plier]
 part = Part.create!(:number => '45200', :description => "Lockout with Interlocking Tabs")
 part.trait_groups << [trait_all]
 
+part = Part.create!(:number => '1010', :description => "Long-Nose Multi-purpose Tool")
+part.trait_groups << [trait_all]
+
 # -----------
 
-part = Part.find_by_name('CL2000')
+part = Part.find_by_number('CL2000')
 trait = Trait.create!(:name => 'special CL2000 only trait', :description => "Show that a part can have unique traits")
 part.traits << trait
 
