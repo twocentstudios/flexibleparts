@@ -17,5 +17,8 @@ ERD.pdf
 .DS_Store
 
 # Ignore screenshots
-
 /doc/screenshots
+
+# Ignore Sublime Text 2 files
+*.sublime-project
+*.sublime-workspace
