@@ -1,6 +1,8 @@
 %h1
 	= @part.number
 	%small= link_to "edit", edit_part_path(@part)
+%h5
+	= @part.description
 #trait-groups
 	#filter.btn-group{"data-toggle" => "buttons-checkbox"}
 		- @part.trait_groups.each do |trait_group|
